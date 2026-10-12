@@ -1,0 +1,25 @@
+# 构建产物
+backend/target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# nginx 本体（保留 html/savor 业务页面）
+frontend/nginx-1.18.0/*
+!frontend/nginx-1.18.0/html/
+frontend/nginx-1.18.0/html/*
+!frontend/nginx-1.18.0/html/savor/
+
+# JMeter HTML 报告（jtl 原始数据保留，报告可由 jtl 再生）
+backend/scripts/jmeter-report/
+
+# 日志与临时文件
+*.log
+logs/
+.tmp-*
+
+# 系统文件
+.DS_Store
+Thumbs.db
